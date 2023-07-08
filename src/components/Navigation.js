@@ -3,7 +3,7 @@ import NavigationItem from "./NavigationItem"
 import "../sass/Navigation.scss";
 
 function Navigation() {
-  const items = [
+  const ITEMS = [
     {
       name: 'Про клініку',
       path: '#about'
@@ -28,9 +28,9 @@ function Navigation() {
 
   return (
     <nav className="navigation">
-      <h2 className='visually-hidden'>For SEO</h2>
+      <h className='visually-hidden'>For SEO</h>
       <ul className="navigation__list">
-        {items.map((el, i) => (
+        {ITEMS.map((el, i) => (
           <NavigationItem key={i} name={el.name} path={el.path} />
         ))}
       </ul>

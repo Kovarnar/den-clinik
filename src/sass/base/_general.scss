@@ -75,3 +75,22 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.text {
+    font-family: $josefinSansFont;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 1.4;
+
+    &-dark {
+        color: $darkBlueColot;
+    }
+
+    &-gray {
+        color: $grayBlueColor;
+    }
+
+    &-light {
+        color: $nearlyWhiteColor;
+    }
+}

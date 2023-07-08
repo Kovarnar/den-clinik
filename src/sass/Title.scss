@@ -1,2 +1,9 @@
 @import './base/index.scss';
 
+.title {
+  font-family: $juraFont;
+  font-weight: 700;
+  font-size: rem(30px);
+  line-height: 1.2;
+  color: $darkBlueColot;
+}
