@@ -1,4 +1,6 @@
+@import './base/reset.scss';
 @import './base/index.scss';
+@import './base/general.scss';
 
 .App {
   display: grid;
@@ -9,5 +11,4 @@
 }
 
 .main {
-  background-color: $whiteColor;
 }

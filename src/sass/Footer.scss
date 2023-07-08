@@ -10,7 +10,18 @@
     gap: 30px;
   }
 
-  &__list {
+  .navigation {
+    &__link {
+      color: $nearlyWhiteColor;
+
+      &:hover {
+        color: $accentBlueColor;
+      }
+    }
+  }
+
+  &__list,
+  .navigation__list {
     display: grid;
     grid-template-columns: auto;
     grid-auto-rows: min-content;
@@ -49,16 +60,16 @@
       gap: 80px;
     }
 
-    &__list.foter__list-columns {
+    .navigation__list {
       grid-template-columns: auto auto auto;
       grid-template-rows: min-content;
       gap: 10px 60px;
 
       max-height: 54px;
+    }
 
-      .item:nth-child(even) {
-        order: 2
-      }
+    .navigation__item:nth-child(even) {
+      order: 2
     }
   }
 }
