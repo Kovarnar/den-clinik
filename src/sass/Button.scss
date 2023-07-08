@@ -1,0 +1,21 @@
+@import './base/index.scss';
+
+.button {
+  display: inline-block;
+
+  padding: 9px 42px;
+  border: 1px solid $nearlyWhiteColor;
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-family: $josefinSansFont;
+  font-size: rem(18px);
+  line-height: 1.2;
+  color: $nearlyWhiteColor;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hoverBlueColor;
+  }
+}

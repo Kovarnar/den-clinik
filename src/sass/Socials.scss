@@ -4,9 +4,22 @@
   display: flex;
   column-gap: 10px;
 
+  &__item {
+    transition: all 1.5s linear;
+
+    &:hover {
+      animation: icon .1s 4;
+    }
+  }
+
   .icon {
     width: 25px;
     height: 25px;
     fill: $nearlyWhiteColor;
   }
+}
+
+@keyframes icon {
+  0%{ transform: rotateZ(-10deg); }
+  100%{ transform: rotateZ(10deg); }
 }
