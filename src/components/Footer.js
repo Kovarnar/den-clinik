@@ -10,15 +10,11 @@ function Footer() {
     <footer className='footer'>
       <div className="container">
         <Logo />
-        <ul className='footer__list'>
+        <ul className='footer__list foter__list-columns'>
           <LinkListItem text="Про клініку" path="#about" />
           <LinkListItem text="Наші послуги" path="#services" />
-        </ul>
-        <ul className='footer__list'>
           <LinkListItem text="Прайс" path="#price" />
           <LinkListItem text="Наші лікарі" path="#doctors" />
-        </ul>
-        <ul className='footer__list'>
           <LinkListItem text="Акції" path="#promotions" />
         </ul>
         <Socials />

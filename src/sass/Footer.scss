@@ -1,5 +1,64 @@
 @import './base/index.scss';
 
 .footer {
+  padding: 40px 0px;
   background-color: $grayBlueColor;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: min-content;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .footer {
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 30px 0 60px;
+
+    .container {
+      grid-template-columns: auto 1.5fr auto 0.9fr;
+      gap: 80px;
+    }
+
+    &__list.foter__list-columns {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: min-content;
+      gap: 10px 60px;
+
+      max-height: 54px;
+
+      .item:nth-child(even) {
+        order: 2
+      }
+    }
+  }
 }
