@@ -1,0 +1,12 @@
+@import './base/index.scss';
+
+.socials {
+  display: flex;
+  column-gap: 10px;
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    fill: $nearlyWhiteColor;
+  }
+}

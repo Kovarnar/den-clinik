@@ -1,4 +1,5 @@
 import Logo from './Logo';
+import Socials from './Socials';
 
 import '../sass/Footer.scss';
 
@@ -7,6 +8,7 @@ function Footer() {
     <footer className='footer'>
       <div className="container">
         <Logo />
+        <Socials />
       </div>
     </footer>
   )
