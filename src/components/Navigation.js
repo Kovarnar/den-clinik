@@ -10,7 +10,7 @@ function Navigation() {
     },
     {
       name: 'Наші послуги',
-      path: ''
+      path: '#services'
     },
     {
       name: 'Прайс',

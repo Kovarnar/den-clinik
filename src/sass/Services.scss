@@ -1,0 +1,28 @@
+@import './base/index.scss';
+
+.services {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

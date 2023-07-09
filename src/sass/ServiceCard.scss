@@ -1,0 +1,27 @@
+@import './base/index.scss';
+
+.card {
+  display: flex;
+  align-items: center;
+
+  padding: 19px 24px;
+  background-color: $accentBlueColor;
+  border-radius: 4px;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hoverBlueColor;
+  }
+
+  &:active {
+    background-color: $grayBlueColor;
+  }
+
+  .icon {
+    margin-right: 17px;
+    width: 62px;
+    height: 62px;
+    fill: #FBFDFF;
+  }
+}

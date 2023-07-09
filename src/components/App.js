@@ -1,5 +1,6 @@
 import Header from './Header';
 import About from './About';
+import Services from './Services'
 import Footer from './Footer';
 
 import '../sass/App.scss';
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <main className='main'>
         <About />
+        <Services />
       </main>
       <Footer />
     </div>
