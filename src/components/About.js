@@ -1,5 +1,6 @@
 import Title from "./Title";
 import Image from "./Image";
+import RadioQuize from "./RadioQuize";
 
 import "../sass/About.scss";
 
@@ -22,6 +23,7 @@ function About() {
           <Title title="Про клініку" />
           <p className="about__text text text-dark">Ми професійно і комплексно вирішуємо всі випадки, пов'язані з зубами і порожниною рота, при розумному співвідношенні ціни і якості отримуваних послуг, для всіх членів вашої родини. Завдяки високому професіоналізму і чуйності наших лікарів, Ви не будете відчувати болю під час лікування. Ми використовуємо найкращі анестетики і перед уколом місцеву анестезію, обробляємо спеціальним кремом місце для уколу.</p>
           <Title title="Боїшся стомалогів?" />
+          <RadioQuize />
         </div>
         <Image src1={IMAGE.src1} src2={IMAGE.src2} src3={IMAGE.src3} src4={IMAGE.src4}
               alternative={IMAGE.alternative} width={IMAGE.width} height={IMAGE.height} />
