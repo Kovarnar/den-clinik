@@ -18,4 +18,8 @@
   &:hover {
     background-color: $hoverBlueColor;
   }
+
+  &:active {
+    background-color: $grayBlueColor;
+  }
 }

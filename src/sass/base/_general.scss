@@ -79,7 +79,7 @@ img {
 .text {
     font-family: $josefinSansFont;
     font-weight: 400;
-    font-size: rem(18px);
+    font-size: rem(14px);
     line-height: 1.4;
 
     &-dark {
@@ -92,5 +92,17 @@ img {
 
     &-light {
         color: $nearlyWhiteColor;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .text {
+        font-size: rem(16px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text {
+        font-size: rem(18px);
     }
 }

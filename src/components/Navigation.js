@@ -28,7 +28,7 @@ function Navigation() {
 
   return (
     <nav className="navigation">
-      <h className='visually-hidden'>For SEO</h>
+      <h2 className='visually-hidden'>For SEO</h2>
       <ul className="navigation__list">
         {ITEMS.map((el, i) => (
           <NavigationItem key={i} name={el.name} path={el.path} />

@@ -1,0 +1,87 @@
+@import './base/index.scss';
+
+.accordion {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    position: absolute;
+    appearance: none;
+
+    &:checked ~ .accordion__content {
+      display: block;
+
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:checked ~ .accordion__title {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5px;
+    padding: 14px 24px 11px 32px;
+    background-color: $accentBlueColor;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    span {
+      margin-right: 20px;
+    }
+
+    .icon {
+      font-size: 24px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .content {
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+
+      margin-left: 16px;
+      padding: 9px 24px 6px;
+
+      background-color: $lightBlueColor;
+      border-radius: 4px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__price {
+      align-self: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .accordion {
+    &__title {
+      span {
+        margin-right: 35px;
+      }
+    }
+  }
+}

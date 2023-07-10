@@ -1,8 +1,8 @@
 import Header from './Header';
 import About from './About';
-import Services from './Services'
+import Services from './Services';
+import Price from './Price';
 import Footer from './Footer';
-
 import '../sass/App.scss';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <main className='main'>
         <About />
         <Services />
+        <Price />
       </main>
       <Footer />
     </div>

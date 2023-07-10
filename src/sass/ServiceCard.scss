@@ -1,14 +1,19 @@
 @import './base/index.scss';
 
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
 
-  padding: 19px 24px;
+  padding: 10px;
   background-color: $accentBlueColor;
   border-radius: 4px;
 
   transition: background-color 0.3s ease;
+
+  .text {
+    align-self: center;
+  }
 
   &:hover {
     background-color: $hoverBlueColor;
@@ -19,9 +24,19 @@
   }
 
   .icon {
-    margin-right: 17px;
+    margin-right: 5px;
     width: 62px;
     height: 62px;
     fill: #FBFDFF;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .card {
+    padding: 19px 24px;
+
+    .icon {
+      margin-right: 17px;
+    }
   }
 }

@@ -1,0 +1,10 @@
+@import './base/index.scss';
+
+.price {
+  padding: 50px 0;  //100px 0;
+
+  .title {
+    max-width: 1000px;
+    margin: 0 auto 25px;   //40px;
+  }
+}
