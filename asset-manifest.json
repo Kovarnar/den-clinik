@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/den-clinik/static/css/main.f0b664e3.css",
+    "main.js": "/den-clinik/static/js/main.ba373eae.js",
+    "static/js/787.73a279c0.chunk.js": "/den-clinik/static/js/787.73a279c0.chunk.js",
+    "static/media/clinik@3x.webp": "/den-clinik/static/media/clinik@3x.001f3ffc193916130d79.webp",
+    "static/media/clinik.jpg": "/den-clinik/static/media/clinik.989a46b56ada356a7161.jpg",
+    "static/media/clinik@2x.webp": "/den-clinik/static/media/clinik@2x.909378e27eba8e7ef1e5.webp",
+    "static/media/clinik.webp": "/den-clinik/static/media/clinik.96811d80051a373b0b7f.webp",
+    "static/media/JosefinSans-Regular.woff": "/den-clinik/static/media/JosefinSans-Regular.92f33148b9a8e35890e9.woff",
+    "static/media/logo.svg": "/den-clinik/static/media/logo.ea3e13bf7c022a2bbe084b2273b469db.svg",
+    "index.html": "/den-clinik/index.html",
+    "main.f0b664e3.css.map": "/den-clinik/static/css/main.f0b664e3.css.map",
+    "main.ba373eae.js.map": "/den-clinik/static/js/main.ba373eae.js.map",
+    "787.73a279c0.chunk.js.map": "/den-clinik/static/js/787.73a279c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0b664e3.css",
+    "static/js/main.ba373eae.js"
+  ]
+}
