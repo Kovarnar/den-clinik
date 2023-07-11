@@ -8,6 +8,10 @@
   &__top {
     padding: 15px 0;
     background-color: $accentBlueColor;
+
+    .header__contacts {
+      display: none;
+    }
   }
 
   &__contacts {
@@ -104,4 +108,67 @@
       }
     }
   }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    &__top {
+
+      .container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+      }
+
+      .logo {
+        margin-right: 80px;
+      }
+      .header__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &__bottom {
+      .header__contacts {
+        display: none;
+      }
+
+      .wrapper {
+        position: unset;
+
+        min-height: unset;
+        max-width: unset;
+        padding: 9px 0px;
+        background-color: unset;
+      }
+
+      .navigation {
+        margin-bottom: unset;
+
+        &__list {
+          display: flex;
+          flex-direction: unset;
+          gap: 130px;
+          justify-content: center;
+        }
+
+        &__link {
+          font-size: 1rem;
+          color: $darkBlueColot;
+
+          &:hover {
+            color: $accentBlueColor;
+          }
+        }
+      }
+    }
+
+    .burger-menu {
+      display: none;
+    }
+  }
+
 }
