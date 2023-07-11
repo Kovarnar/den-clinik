@@ -1,10 +1,20 @@
 @import './base/index.scss';
 
 .price {
-  padding: 50px 0;  //100px 0;
+  padding: 50px 0;
 
   .title {
     max-width: 1000px;
-    margin: 0 auto 25px;   //40px;
+    margin: 0 auto 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .price {
+    padding: 100px 0;
+
+    .title {
+      margin: 0 auto 40px;
+    }
   }
 }

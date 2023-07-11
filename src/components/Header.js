@@ -9,7 +9,7 @@ import '../sass/Header.scss';
 
 function Header() {
   return (
-    <header className='header active'>
+    <header className='header'>
       <BurgerMenu />
 
       <div className="header__top">

@@ -71,6 +71,25 @@
     }
   }
 
+  .submenu {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+      font-family: $josefinSansFont;
+      color: $nearlyWhiteColor;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: $accentBlueColor;
+      }
+    }
+  }
+
   &__popup {
     position: absolute;
     top: 0;
@@ -162,6 +181,25 @@
           &:hover {
             color: $accentBlueColor;
           }
+        }
+      }
+
+      .submenu {
+        // &__item {
+        //   &:not(:last-child) {
+        //     margin-bottom: 5px;
+        //   }
+        // }
+
+        &__link {
+          // font-size: 16px;
+          // font-family: $josefinSansFont;
+          color: $darkBlueColot;
+          // transition: color 0.5s ease;
+
+          // &:hover {
+          //   color: $accentBlueColor;
+          // }
         }
       }
     }
