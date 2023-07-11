@@ -1,5 +1,4 @@
-import NavigationItem from "./NavigationItem"
-
+import NavigationItem from "./NavigationItem";
 import "../sass/Navigation.scss";
 
 function Navigation() {
