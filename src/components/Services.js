@@ -17,7 +17,7 @@ function Services() {
     }
   ]
   return (
-    <section className='services'>
+    <section className='services' id="services">
       <div className='container'>
         {CARDS.map((el, i) => (
           <ServiceCard key={i} text={el.text} path={el.path} />

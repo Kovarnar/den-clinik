@@ -4,7 +4,7 @@ import "../sass/Price.scss";
 
 function Price() {
   return (
-    <section className="price">
+    <section className="price" id="price">
       <div className="container">
         <Title title="Прайс" />
         <Accordion />
