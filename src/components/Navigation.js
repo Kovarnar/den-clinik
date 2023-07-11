@@ -5,32 +5,37 @@ function Navigation() {
   const ITEMS = [
     {
       name: 'Про клініку',
-      path: '#about'
+      path: '#about',
+      isExpandable: false
     },
     {
       name: 'Наші послуги',
-      path: '#services'
+      path: '#services',
+      isExpandable: true
     },
     {
       name: 'Прайс',
-      path: '#price'
+      path: '#price',
+      isExpandable: false
     },
     {
       name: 'Наші лікарі',
-      path: '#doctors'
+      path: '#doctors',
+      isExpandable: false
     },
     {
       name: 'Акції',
-      path: '#promotions'
+      path: '#promotions',
+      isExpandable: false
     }
   ];
 
   return (
-    <nav className="navigation">
+    <nav className="navigation active">
       <h2 className='visually-hidden'>For SEO</h2>
       <ul className="navigation__list">
         {ITEMS.map((el, i) => (
-          <NavigationItem key={i} name={el.name} path={el.path} />
+          <NavigationItem key={i} name={el.name} path={el.path} isExpandable={el.isExpandable} />
         ))}
       </ul>
     </nav>

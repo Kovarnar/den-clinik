@@ -1,19 +1,17 @@
 @import './base/index.scss';
 
 .header {
+  position: relative;
   z-index: 1;
   box-shadow: 0px 4px 11px  rgb(53, 84, 97, 0.1);
 
   &__top {
     padding: 15px 0;
     background-color: $accentBlueColor;
-
-    .container {}
   }
 
-  &__bottom {
-    padding: 9px 0;
-    background-color: $nearlyWhiteColor;
+  &__contacts {
+    display: flex;
 
   }
 
@@ -23,9 +21,87 @@
     stroke: $nearlyWhiteColor;
   }
 
-  // &__list {
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: 5px;
-  // }
+  .wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    right: -100%;
+
+    min-height: 100vh;
+    width: 100%;
+    max-width: 375px;
+    padding: 100px 20px 30px;
+    background-color: $grayBlueColor;
+
+    transition: right 0.5s ease;
+
+    .header__contacts {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .button {
+      align-self: center;
+      width: fit-content;
+    }
+  }
+
+  .navigation {
+    margin-bottom: 30px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__item {}
+
+    &__link {
+      font-size: 1.5rem;
+      color: $nearlyWhiteColor;
+
+      &:hover {
+        color: $accentBlueColor;
+      }
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(19, 58, 75, 0.5);
+  }
+
+  &.active {
+    .wrapper {
+      right: 0;
+    }
+
+    .header__popup {
+      display: unset;
+    }
+
+    .burger-menu {
+      justify-content: center;
+
+      &__item:nth-of-type(2) {
+        display: none;
+      }
+
+      &__item:nth-of-type(1) {
+        transform: translateY(1px) rotate(45deg);
+      }
+      &__item:nth-of-type(3) {
+        transform:  translateY(-1px) rotate(135deg);
+      }
+    }
+  }
 }

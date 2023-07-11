@@ -14,11 +14,29 @@
     font-size: 1rem;
     line-height: 1.4;
     color: $darkBlueColot;
+    cursor: pointer;
 
     transition: color 0.3s ease;
 
     &:hover {
       color: $accentBlueColor;
+    }
+  }
+
+  .expandable {
+
+    .submenu {
+      display: none;
+
+      &__item {
+        padding-left: 10px;
+      }
+    }
+
+    &.menu-active {
+      .submenu {
+        display: block;
+      }
     }
   }
 }

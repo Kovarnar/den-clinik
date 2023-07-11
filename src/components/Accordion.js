@@ -77,7 +77,7 @@ function Accordion() {
           />
           <label
                 className={`accordion__title text text-light ${openItems.includes(el.id) ? 'open' : ''}`}
-                for={el.id}
+                htmlFor={el.id}
           >
             <span>{el.title}</span>
             <FiChevronDown className="icon" />
