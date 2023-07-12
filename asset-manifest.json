@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/den-clinik/static/css/main.9fda0f87.css",
-    "main.js": "/den-clinik/static/js/main.2678283f.js",
+    "main.js": "/den-clinik/static/js/main.6a052291.js",
     "static/js/787.73a279c0.chunk.js": "/den-clinik/static/js/787.73a279c0.chunk.js",
     "static/media/clinik@3x.webp": "/den-clinik/static/media/clinik@3x.001f3ffc193916130d79.webp",
     "static/media/clinik.jpg": "/den-clinik/static/media/clinik.989a46b56ada356a7161.jpg",
@@ -11,11 +11,11 @@
     "static/media/logo.svg": "/den-clinik/static/media/logo.ea3e13bf7c022a2bbe084b2273b469db.svg",
     "index.html": "/den-clinik/index.html",
     "main.9fda0f87.css.map": "/den-clinik/static/css/main.9fda0f87.css.map",
-    "main.2678283f.js.map": "/den-clinik/static/js/main.2678283f.js.map",
+    "main.6a052291.js.map": "/den-clinik/static/js/main.6a052291.js.map",
     "787.73a279c0.chunk.js.map": "/den-clinik/static/js/787.73a279c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fda0f87.css",
-    "static/js/main.2678283f.js"
+    "static/js/main.6a052291.js"
   ]
 }
