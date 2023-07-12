@@ -1,8 +1,8 @@
 import "../sass/BurgerMenu.scss";
 
-function BurgerMenu() {
+function BurgerMenu( {onClick} ) {
   return (
-    <div className="burger-menu">
+    <div className="burger-menu" onClick={onClick}>
       <span className="burger-menu__item"></span>
       <span className="burger-menu__item"></span>
       <span className="burger-menu__item"></span>

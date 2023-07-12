@@ -1,6 +1,5 @@
 import NavigationItem from "./NavigationItem";
 
-
 function Navigation() {
   const ITEMS = [
     {
@@ -35,7 +34,12 @@ function Navigation() {
       <h2 className='visually-hidden'>For SEO</h2>
       <ul className="navigation__list">
         {ITEMS.map((el, i) => (
-          <NavigationItem key={i} name={el.name} path={el.path} isExpandable={el.isExpandable} />
+          <NavigationItem
+            key={i}
+            name={el.name}
+            path={el.path}
+            isExpandable={el.isExpandable}
+          />
         ))}
       </ul>
     </nav>
