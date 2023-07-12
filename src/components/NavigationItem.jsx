@@ -6,6 +6,7 @@ export const NavigationItem = props => {
 
   return (
     <>
+
       {props.isExpandable ? (
         <li className="navigation__item">
           <div className={`expandable ${subMenuActive ? 'menu-active' : ''}`}>

@@ -1,4 +1,4 @@
-import {NavigationItem} from "./NavigationItem.js";
+import {NavigationItem} from "./NavigationItem";
 
 function Navigation({onCloseClick}) {
   const ITEMS = [

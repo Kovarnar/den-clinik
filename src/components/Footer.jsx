@@ -11,7 +11,7 @@ function Footer() {
     <footer className='footer'>
       <div className="container">
         <Logo />
-        <Navigation className="footer__navigation" />
+        <Navigation />
         <Socials />
         <ul className='footer__list'>
           <NavigationItem name="Ліцензії" path="#licenses" />
