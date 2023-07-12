@@ -1,6 +1,6 @@
 import Logo from './Logo';
 import Navigation from './Navigation';
-import NavigationItem from './NavigationItem';
+import {NavigationItem} from './NavigationItem';
 import Socials from './Socials';
 
 import '../sass/Footer.scss';

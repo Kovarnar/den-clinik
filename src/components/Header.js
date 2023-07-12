@@ -60,6 +60,7 @@ function Header() {
         <div className="container">
           <div className="wrapper">
             <Navigation onCloseClick={handleCloseClick} />
+
             <div className='header__contacts'>
               <ul className='header__list'>
               <LinkListItem
@@ -77,12 +78,14 @@ function Header() {
             </ul>
               <ul className='header__list'>
                 <LinkListItem
+                onClick={handleCloseClick}
                   text="(095)251 01 11"
                   path="tel:+80952510111"
                   icon={<HiOutlinePhone
                   className='icon'
                 />} />
                 <LinkListItem
+                onClick={handleCloseClick}
                   text="(098)251 01 11"
                   path="tel:+80982510111"
                   icon={<HiOutlinePhone

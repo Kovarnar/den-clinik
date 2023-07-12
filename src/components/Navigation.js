@@ -1,6 +1,6 @@
-import NavigationItem from "./NavigationItem";
+import {NavigationItem} from "./NavigationItem.js";
 
-function Navigation() {
+function Navigation({onCloseClick}) {
   const ITEMS = [
     {
       name: 'Про клініку',
@@ -39,6 +39,7 @@ function Navigation() {
             name={el.name}
             path={el.path}
             isExpandable={el.isExpandable}
+            handelOnCloseClick={onCloseClick}
           />
         ))}
       </ul>

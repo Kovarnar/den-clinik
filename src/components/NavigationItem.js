@@ -1,43 +1,46 @@
 import { useState } from "react";
 import "../sass/NavigationItem.scss";
 
-function NavigationItem(props) {
+export const NavigationItem = props => {
   const [subMenuActive, setSubMenuActive] = useState(false);
 
-  const handleClick = () => setSubMenuActive(!subMenuActive);
-
   return (
-    <li className="navigation__item" onClick={props.onCloseClick}>
-      {!props.isExpandable ? (
-        <a className="navigation__link" href={props.path}>
-          {props.name}
-        </a>
-      ) : (
-        <div className={`expandable ${subMenuActive ? 'menu-active' : ''}`}>
-          <div className="navigation__link" onClick={handleClick}>
-            {props.name}
+    <>
+      {props.isExpandable ? (
+        <li className="navigation__item">
+          <div className={`expandable ${subMenuActive ? 'menu-active' : ''}`}>
+            <div
+              className="navigation__link"
+              onClick={() => setSubMenuActive(!subMenuActive)}
+            >
+              {props.name}
+            </div>
+            <ul className="submenu">
+              <li className="submenu__item" onClick={props.handelOnCloseClick}>
+                <a className="submenu__link" href="#servise-1">
+                  Послуга 1
+                </a>
+              </li>
+              <li className="submenu__item" onClick={props.handelOnCloseClick}>
+                <a className="submenu__link" href="#servise-1">
+                  Послуга 2
+                </a>
+              </li>
+              <li className="submenu__item" onClick={props.handelOnCloseClick}>
+                <a className="submenu__link" href="#servise-1">
+                  Послуга 3
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul className="submenu">
-            <li className="submenu__item">
-              <a className="submenu__link" href="#servise-1">
-                Послуга 1
-              </a>
-            </li>
-            <li className="submenu__item">
-              <a className="submenu__link" href="#servise-1">
-                Послуга 2
-              </a>
-            </li>
-            <li className="submenu__item">
-              <a className="submenu__link" href="#servise-1">
-                Послуга 3
-              </a>
-            </li>
-          </ul>
-        </div>
+        </li>
+      ) : (
+        <li className="navigation__item" onClick={props.handelOnCloseClick}>
+          <a className="navigation__link" href={props.path} >
+              {props.name}
+          </a>
+        </li>
       )}
-    </li>
+    </>
   );
 }
-
-export default NavigationItem;
